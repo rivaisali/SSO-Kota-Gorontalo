@@ -7,7 +7,7 @@ This package support for the PHP League's [OAuth 2.0 Client](https://github.com/
 To install, use composer:
 
 ```
-composer require rivaisali/oauth2-keycloak
+composer require rivaisali/sso-client
 ```
 
 ## Usage
@@ -78,7 +78,7 @@ if (!isset($_GET['code'])) {
 ### Refreshing a Token
 
 ```php
-$provider = new Stevenmaguire\OAuth2\Client\Provider\Keycloak([
+$provider = new Rivaisali\SSO\Client\Provider\Keycloak([
     'authServerUrl'     => '{keycloak-server-url}',
     'realm'             => '{keycloak-realm}',
     'clientId'          => '{keycloak-client-id}',
@@ -96,7 +96,7 @@ If you've configured your Keycloak instance to use encryption, there are some ad
 #### Configure the provider to use the same encryption algorithm
 
 ```php
-$provider = new Stevenmaguire\OAuth2\Client\Provider\Keycloak([
+$provider = new Rivaisali\SSO\Client\Provider\Keycloak([
     // ...
     'encryptionAlgorithm'   => 'RS256',
 ]);
