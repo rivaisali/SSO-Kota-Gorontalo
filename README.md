@@ -7,12 +7,12 @@ This package support for the PHP League's [OAuth 2.0 Client](https://github.com/
 To install, use composer:
 
 ```
-composer require stevenmaguire/oauth2-keycloak
+composer require rivaisali/oauth2-keycloak
 ```
 
 ## Usage
 
-Usage is the same as The League's OAuth client, using `\Stevenmaguire\OAuth2\Client\Provider\Keycloak` as the provider.
+Usage is the same as The League's OAuth client, using `\Rivaisali\SSO\Client\Provider\Keycloak` as the provider.
 
 Use `authServerUrl` to specify the Keycloak server URL. You can lookup the correct value from the Keycloak client installer JSON under `auth-server-url`, eg. `http://localhost:8080/auth`.
 
@@ -21,7 +21,7 @@ Use `realm` to specify the Keycloak realm name. You can lookup the correct value
 ### Authorization Code Flow
 
 ```php
-$provider = new Stevenmaguire\OAuth2\Client\Provider\Keycloak([
+$provider = new Rivaisali\SSO\Client\Provider\Keycloak([
     'authServerUrl'         => '{keycloak-server-url}',
     'realm'                 => '{keycloak-realm}',
     'clientId'              => '{keycloak-client-id}',
@@ -140,30 +140,4 @@ $provider = new Stevenmaguire\OAuth2\Client\Provider\Keycloak([
 ]);
 ```
 
-or
 
-```php
-$provider->setEncryptionKeyPath($keyPath);
-```
-
-## Testing
-
-``` bash
-$ ./vendor/bin/phpunit
-```
-
-## Contributing
-
-Please see [CONTRIBUTING](https://github.com/stevenmaguire/oauth2-keycloak/blob/master/CONTRIBUTING.md) for details.
-
-
-## Credits
-
-- [Steven Maguire](https://github.com/stevenmaguire)
-- [Martin Stefan](https://github.com/mstefan21)
-- [All Contributors](https://github.com/stevenmaguire/oauth2-keycloak/contributors)
-
-
-## License
-
-The MIT License (MIT). Please see [License File](https://github.com/stevenmaguire/oauth2-keycloak/blob/master/LICENSE) for more information.
