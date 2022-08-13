@@ -1,0 +1,22 @@
+{
+    "name": "rivaisali/sso-client",
+    "description": "SSO Integration for PHP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rivaisali\\SSO\\Client\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rivaisali",
+            "email": "m.rivai.sali@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "league/oauth2-client": "^2.0",
+        "firebase/php-jwt": "~4.0|~5.0"
+    }
+}
