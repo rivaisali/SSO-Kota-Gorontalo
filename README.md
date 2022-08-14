@@ -29,9 +29,11 @@ $provider = new Broker([
 ]);
 
 $authUrl = $provider->getAuthorizationUrl();
+```
 
 #### Untuk Get User Information
 
+```php
 require(__DIR__ . "/vendor/autoload.php");
 
 use Rivaisali\SSO\Client\Provider\Broker;
@@ -55,8 +57,9 @@ try {
     } catch (Exception $e) {
         exit('Failed to get access token: '.$e->getMessage());
     }
-
+```
 #### Untuk Logout
+```php
 require(__DIR__ . "/vendor/autoload.php");
 
 use Rivaisali\SSO\Client\Provider\Broker;
