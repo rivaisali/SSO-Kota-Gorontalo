@@ -12,7 +12,7 @@ use Psr\Http\Message\ResponseInterface;
 use Rivaisali\SSO\Client\Provider\Exception\EncryptionConfigurationException;
 use UnexpectedValueException;
 
-class SSO extends AbstractProvider
+class Broker extends AbstractProvider
 {
     use BearerAuthorizationTrait;
 
@@ -21,7 +21,7 @@ class SSO extends AbstractProvider
      *
      * @var string
      */
-    public $authServerUrl = null;
+    public $authServerUrl = "https://sso.gorontalokota.go.id";
 
     /**
      * Realm name, eg. demo.
@@ -214,18 +214,18 @@ class SSO extends AbstractProvider
      *
      * @param array $response
      * @param AccessToken $token
-     * @return SSOResourceOwner
+     * @return BrokerResourceOwner
      */
     protected function createResourceOwner(array $response, AccessToken $token)
     {
-        return new SSOResourceOwner($response);
+        return new BrokerResourceOwner($response);
     }
 
     /**
      * Requests and returns the resource owner of given access token.
      *
      * @param  AccessToken $token
-     * @return SSOResourceOwner
+     * @return BrokerResourceOwner
      * @throws EncryptionConfigurationException
      */
     public function getResourceOwner(AccessToken $token)

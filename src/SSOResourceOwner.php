@@ -4,7 +4,7 @@ namespace Rivaisali\SSO\Client\Provider;
 
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 
-class SSOResourceOwner implements ResourceOwnerInterface
+class BrokerResourceOwner implements ResourceOwnerInterface
 {
     /**
      * Raw response
