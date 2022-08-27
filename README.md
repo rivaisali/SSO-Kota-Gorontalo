@@ -7,7 +7,7 @@ Library ini menggunakan dan support PHP League's [OAuth 2.0 Client](https://gith
 Instalasi menggunakan composer :
 
 ```
-composer require rivaisali/sso-client
+composer require gorontalokota/sso-client
 ```
 
 ## Cara Menggunakan
@@ -19,7 +19,7 @@ composer require rivaisali/sso-client
 ```php
 require(__DIR__ . "/vendor/autoload.php");
 
-use Rivaisali\SSO\Client\Provider\Broker;
+use Gorontalokota\SSO\Client\Provider\Broker;
 
 $provider = new Broker([
     'realm'                     => 'Realm',
@@ -36,7 +36,7 @@ $authUrl = $provider->getAuthorizationUrl();
 ```php
 require(__DIR__ . "/vendor/autoload.php");
 
-use Rivaisali\SSO\Client\Provider\Broker;
+use Gorontalokota\SSO\Client\Provider\Broker;
 
 $provider = new Broker([
     'realm'                     => 'Realm',
@@ -62,7 +62,7 @@ try {
 ```php
 require(__DIR__ . "/vendor/autoload.php");
 
-use Rivaisali\SSO\Client\Provider\Broker;
+use Gorontalokota\SSO\Client\Provider\Broker;
 
 $provider = new Broker([
     'realm'                     => 'Realm',
