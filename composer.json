@@ -2,7 +2,7 @@
     "name": "gorontalokota/sso-client",
     "description": "SSO Integration for PHP",
     "type": "library",
-    "license": "Dinas Komunikasi dan Informatika Kota Gorontalo",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Gorontalokota\\SSO\\Client\\": "src/"
