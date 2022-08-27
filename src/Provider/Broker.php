@@ -1,6 +1,6 @@
 <?php
 
-namespace Rivaisali\SSO\Client\Provider;
+namespace Gorontalokota\SSO\Client\Provider;
 
 use Exception;
 use Firebase\JWT\JWT;
@@ -9,7 +9,7 @@ use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
 use Psr\Http\Message\ResponseInterface;
-use Rivaisali\SSO\Client\Provider\Exception\EncryptionConfigurationException;
+use Gorontalokota\SSO\Client\Provider\Exception\EncryptionConfigurationException;
 use UnexpectedValueException;
 
 class Broker extends AbstractProvider

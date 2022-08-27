@@ -1,6 +1,6 @@
 <?php
 
-namespace Rivaisali\SSO\Client\Provider;
+namespace Gorontalokota\SSO\Client\Provider;
 
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 

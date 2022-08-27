@@ -1,6 +1,6 @@
 <?php
 
-namespace Rivaisali\SSO\Client\Provider\Exception;
+namespace Gorontalokota\SSO\Client\Provider\Exception;
 
 use Exception;
 
@@ -9,7 +9,7 @@ class EncryptionConfigurationException extends Exception
     /**
      * Returns properly formatted exception when response decryption fails.
      *
-     * @return Rivaisali\SSO\Client\Provider\Exception\EncryptionConfigurationException
+     * @return Gorontalokota\SSO\Client\Provider\Exception\EncryptionConfigurationException
      */
     public static function undeterminedEncryption()
     {
