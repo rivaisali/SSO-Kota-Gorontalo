@@ -33,6 +33,16 @@ class BrokerResourceOwner implements ResourceOwnerInterface
         return \array_key_exists('sub', $this->response) ? $this->response['sub'] : null;
     }
 
+     /**
+     * Get resource owner Username
+     *
+     * @return string|null
+     */
+    public function getUsername()
+    {
+        return \array_key_exists('preferred_username', $this->response) ? $this->response['preferred_username'] : null;
+    }
+
     /**
      * Get resource owner email
      *
